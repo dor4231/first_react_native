@@ -1,9 +1,9 @@
 {
-  "devToolsPort": 19002,
+  "devToolsPort": 19003,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 1608,
-  "expoServerNgrokUrl": "https://zy-hut.anonymous.firstproject.exp.direct",
-  "packagerNgrokUrl": "https://packager.zy-hut.anonymous.firstproject.exp.direct",
-  "ngrokPid": 23788
+  "packagerPid": 5914,
+  "expoServerNgrokUrl": "https://dn-48j.anonymous.first-react-native.exp.direct",
+  "packagerNgrokUrl": "https://packager.dn-48j.anonymous.first-react-native.exp.direct",
+  "ngrokPid": 5931
 }

@@ -7,6 +7,7 @@ import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import AmirScreen from '../screens/AmirScreen';
+import DorScreen from '../screens/DorScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
@@ -59,18 +60,33 @@ const AmirStack = createStackNavigator({
 });
 
 AmirStack.navigationOptions = {
-  tabBarLabel: 'Settings',
+  tabBarLabel: 'Amir',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ion-ios-happy-outline' : 'md-happy'}
+      name={Platform.OS === 'ios' ? 'ios-american-football' : 'md-happy'}
+    />
+  ),
+};
+
+const DorStack = createStackNavigator({
+  Dor: DorScreen,
+});
+
+DorStack.navigationOptions = {
+  tabBarLabel: 'Dor',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={Platform.OS === 'ios' ? 'ios-beer' : 'md-happy'}
     />
   ),
 };
 
 export default createBottomTabNavigator({
-  HomeStack,
+  // HomeStack,
   AmirStack,
+  DorStack,
   // LinksStack,
   // SettingsStack,
 });
